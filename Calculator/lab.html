@@ -1,0 +1,33 @@
+
+<DOCTYPE! html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device, initial-scale=1.0">
+          <title>Lab item list</title>
+          <script>
+              // DOMContentLoaded wait until all dom is loaded, check the docs in below link
+              // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+              document.addEventListener("DOMContentLoaded", (_) => {
+                  let item_name = document.querySelector("#item-name");
+                  let item_value = document.querySelector("#item-value");
+                  // use here what you have in utils.js
+              });
+          </script>
+      </head>
+      <body>
+          <div id = "title" style = "text-align: center; padding-top: 20px;">
+            <h1>Dynamic Calculator</h1>
+            <p>Antonio Gonzalez A01194261</p>
+        </div>
+          <div id="container" style="text-align: center; padding: 20px; border: 2px solid white;">
+              item:       <input type="text" id="item-name">
+              value:      <input type="text" id="item-value">
+              <button id="add-item">add</button>
+          </div>
+          <ul id="item-list" class="items" style="text-align: center;">
+          </ul>
+          <div id="total" style="text-align: center;">Insert items to get price</div>
+          <script src="./utils.js"></script>
+      </body>
+  </html>
