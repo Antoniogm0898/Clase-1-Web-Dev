@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokeweight Calculator</title>
+    <script src="./util.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        background-image: url("https://external-preview.redd.it/z7_wYb9-YSvt0pDJlDIu8iuK_aWdqZPg0wvrGdwNvBw.png?auto=webp&s=b40bf3d0bccf7fe4f8dc601182710ca34eac2222");
+      }
+   </style>
+  </head>
+  <body>
+    <div style="text-align: center;">
+    <h1>Pokeweight Calculator</h1>
+    <h3>Antonio Gonzalez A01194261</h3>
+    </div>
+    <div></div>
+    <div id="alarm-space" style="text-align: center; color: red;" ></div>
+
+    <div class="input-group" style="text-align: center;">
+      <div class="input-group-prepend" style="text-align: center;" >
+        <span class="input-group-text" id="basic-addon1"></span>
+      </div>
+      <input id="pokemon-input" type="text" class="form-control" placeholder="Try adding charmander"/>
+      <button id="add-pokemon" type="button" class="btn btn-info" style="margin-top: 10px ;">Add a new Pokemon</button>
+    </div>
+
+
+    <div style="text-align: center; margin-top: 10px;" id="total"><b></b></div>
+
+    <div class = "table">
+      <ul class="items list-group" id="item_list" id="horizontal-list"style="visibility: hidden;" >
+        <li class="list-group-item active"></li>
+      </ul>
+    </div>
+  </body>
+</html>
